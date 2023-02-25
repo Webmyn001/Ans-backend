@@ -20,15 +20,15 @@ const createLesson =  (req, res) => {
    Body2: req.body.Body2,
    Body3: req.body.Body3,
    image1: {
-     data: fs.readFileSync('Images/' + req.files.image1[0].filename),
+     data: fs.readFileSync('/tmp/Images/' + req.files.image1[0].filename),
      contentType: "image/png",
    },
    image2: {
-     data: fs.readFileSync('Images/' + req.files.image2[0].filename),
+     data: fs.readFileSync('/tmp/Images/' + req.files.image2[0].filename),
      contentType: "image/png",
    },
    image3: {
-    data: fs.readFileSync('Images/' + req.files.image3[0].filename),
+    data: fs.readFileSync('/tmp/Images/' + req.files.image3[0].filename),
     contentType: "image/png",
   },
    Body4: req.body.Body4,
